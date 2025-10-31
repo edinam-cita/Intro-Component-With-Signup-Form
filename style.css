@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ff7a7a;
+}
+
+.main-container {
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  max-width: 1440px;
+}
+
+.inner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 100%;
+  background: url(/assets/bg-intro-desktop.png) no-repeat;
+  background-size: cover;
+  background-position: cover;
+  align-items: center;
+  margin-top: -1rem;
+}
+
+.grid-one {
+  margin-left: 8rem;
+}
+
+.grid-one h1 {
+  font-size: 2.4rem;
+}
+
+.grid-one p {
+  margin-top: 1.5rem;
+}
+
+.grid-two {
+  height: 700px;
+  max-width: 400px;
+  margin-left: 2rem;
+  text-align: center;
+  align-content: center;
+  margin-right: 8rem;
+}
+
+#header {
+  background-color: #6055a5ff;
+  padding: 0.7rem 2rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.grid-two span {
+  font-weight: 600;
+}
+
+.grid-two form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1.8rem;
+}
+
+form > * {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+form input,
+button {
+  padding: 0.8rem 1rem;
+  border: #8c89a4 solid 0.3px;
+  border-radius: 3px;
+}
+
+form input {
+  width: 100%;
+}
+
+input:focus {
+  border: solid 2px #8c89a4;
+  outline: none;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+form img {
+  display: none;
+  width: 1rem;
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}
+
+form .error-msg {
+  display: none;
+  color: red;
+  font-size: 0.55rem;
+  margin-top: -0.5rem;
+  text-align: end;
+}
+
+.input-wrap.error input::placeholder {
+  color: red;
+}
+
+button {
+  background-color: #38cc8cff;
+  color: #fff;
+  font-weight: 500;
+}
+
+#notice {
+  color: #8c89a4;
+  font-size: 0.55rem;
+  margin-bottom: -0.1rem;
+}
+
+#notice a {
+  text-decoration: none;
+  color: #ff7a7a;
+  font-weight: 550;
+}
+
+@media (max-width: 980px) {
+  .main-container {
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  .inner-container {
+    background: url(/assets/bg-intro-mobile.png) no-repeat;
+    background-position: cover;
+    height: 100%;
+  }
+
+  .grid-one {
+    margin-left: 4rem;
+  }
+
+  .grid-two {
+    margin-right: 2rem;
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 844px) {
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: -4rem;
+  }
+
+  .grid-one {
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .grid-one h1 {
+    font-size: 2rem;
+  }
+
+  .grid-one p {
+    font-size: 0.9rem;
+  }
+
+  .grid-two {
+    margin-top: -6rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+}
