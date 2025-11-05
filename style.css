@@ -114,8 +114,20 @@ form .error-msg {
   text-align: end;
 }
 
+.input-wrap input::placeholder {
+  color: #8c89a4;
+}
+
 .input-wrap.error input::placeholder {
   color: red;
+}
+
+.input-wrap.error input {
+border-color: red;
+}
+
+.input-wrap.error .error{
+  visibility: visible;
 }
 
 button {
